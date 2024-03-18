@@ -1,4 +1,4 @@
-name: Auto-deploy-to-wpengine-development
+name: Auto-deploy-to-dreamhost-development
 
 # Controls when the workflow will run
 on:
@@ -23,4 +23,5 @@ jobs:
           local_path: './*'
           remote_path: '/home/mairaj_wp_wpvisions/mairaj.wp.wpvisions.com'
           sftp_only: true
+          delete_remote_files: true
           password: ${{ secrets.FTP_PASSWORD }}
