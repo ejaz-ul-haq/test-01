@@ -21,7 +21,7 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           port: ${{ secrets.FTP_PORT }}
           local_path: './*'
-          remote_path: '/home/mairaj_wp_wpvisions/mairaj.wp.wpvisions.com/'
+          remote_path: '/home/mairaj_wp_wpvisions/mairaj.wp.wpvisions.com'
           sftp_only: true
           delete_remote_files: true
           password: ${{ secrets.FTP_PASSWORD }}
